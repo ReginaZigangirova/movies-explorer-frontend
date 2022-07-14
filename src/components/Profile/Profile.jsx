@@ -15,7 +15,7 @@ function Profile() {
                 </label>
                 <button className='profile-form__button'>Редактировать</button>
             </form>
-            <p className='profile-form__logout'>Выйти из аккаунта</p>
+            <button className='profile-form__logout'>Выйти из аккаунта</button>
         </main>
     )
 }

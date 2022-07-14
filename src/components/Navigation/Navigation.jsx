@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import iconProfile from '../../images/icon-main.svg'
 
-const Navigation = () => {
+function Navigation () {
   const [showItems, setShowItems] = useState(false);
 
   function handleToggleNavigation () {

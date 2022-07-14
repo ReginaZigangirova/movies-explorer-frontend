@@ -53,13 +53,13 @@
 }
 
 .about-project__diagram-beck {
-    width: 140px;
+    width: 228px;
     display: block;
     text-align: center;
 }
 
 .about-project__diagram-front {
-    width: 80%;
+    width: 912px;
     display: block;
     text-align: center;
 }
@@ -105,6 +105,12 @@
     .about-project__diagram {
         margin-top: 93px;
     }
+    .about-project__diagram-beck {
+        width: 140px;
+    }
+    .about-project__diagram-front {
+        width: 528px;
+    }
 }
 
 @media screen and (max-width: 540px) {
@@ -118,9 +124,12 @@
     }
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 480px) {
     .about-project__diagram-beck {
         width: 100px;
+    }
+    .about-project__diagram-front {
+        width: 184px;
     }
 }
 

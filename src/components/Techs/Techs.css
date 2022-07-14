@@ -74,6 +74,12 @@
     text-align: center;
     letter-spacing: -0.04em;
     cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+
+.techs__link:hover {
+    opacity: .6;
 }
 
 @media screen and (max-width: 768px) {

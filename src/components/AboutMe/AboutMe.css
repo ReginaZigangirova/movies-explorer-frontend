@@ -66,6 +66,10 @@
     margin: 0 20px 0 0;
 }
 
+.about-me__link:hover {
+    opacity: .6;
+}
+
 .about-me__img {
     width: 270px;
     height: 327px;

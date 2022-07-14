@@ -40,6 +40,10 @@
     cursor: pointer;
 }
 
+.form__button:hover {
+    opacity: .6;
+}
+
 .form__button_register {
     padding: 13px 126px 15px 124px;
 }
@@ -61,6 +65,10 @@
     color: #000000;
     cursor: pointer;
     text-decoration: none;
+}
+
+.form__link:hover {
+    opacity: .6;
 }
 
 @media screen and (max-width: 450px) {

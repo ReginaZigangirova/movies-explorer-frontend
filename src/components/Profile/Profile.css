@@ -50,6 +50,11 @@
     padding: 0;
     margin-top: 220px;
     text-align: center;
+    cursor: pointer;
+}
+
+.profile-form__button:hover {
+    opacity: .6;
 }
 
 .profile-form__logout {
@@ -59,6 +64,14 @@
     font-size: 13px;
     line-height: 16px;
     color: #FF4062;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.profile-form__logout:hover {
+    opacity: .6;
 }
 
 @media screen and (max-width: 768px) {

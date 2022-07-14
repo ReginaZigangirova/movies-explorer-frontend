@@ -38,6 +38,10 @@
     cursor: pointer;
 }
 
+.promo__link:hover {
+    opacity: .6;
+}
+
 .promo__img {
     width: 310px;
     height: 304px;

@@ -39,6 +39,10 @@
     padding-bottom: 19px;
 }
 
+.portfolio__link:hover {
+    opacity: .6;
+}
+
 @media screen and (max-width: 768) {
     .portfolio {
         padding: 0 50px 90px;

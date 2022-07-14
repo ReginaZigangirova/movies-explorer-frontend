@@ -36,6 +36,10 @@
     cursor: pointer;
 }
 
+.search-form__button:hover {
+    opacity: .6;
+}
+
 @media screen and (max-width: 1155px) {
     .search-form__container {
         max-width: 708px;

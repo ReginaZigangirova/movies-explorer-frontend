@@ -2,9 +2,9 @@ import logo from '../../images/logo.svg';
 import '../Header/Header.css';
 import Navigation  from '../Navigation/Navigation';
 import {useLocation} from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
-function Header({ loggedIn }) {
+function Header({loggedIn}) {
     const location = useLocation();
     let headerVisible = false;
     let navigationVisible = false;
@@ -16,14 +16,14 @@ function Header({ loggedIn }) {
         headerVisible = true;
         navigationVisible = true;
     } else if (
-            location.pathname === '/'
+            location.pathname === '/' && !loggedIn
         ){
             headerVisible = false;
         navigationVisible = false;
         }
     
     return (
-        <header className={`header ${headerVisible  && 'header_hidden'}`}>
+            <header className={`header ${headerVisible && 'header_hidden'}`}>
             <Link to='/'>
                 <img src={logo} className='header__logo' alt='логотип'/>
             </Link>

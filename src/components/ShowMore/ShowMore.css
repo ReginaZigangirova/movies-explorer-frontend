@@ -15,3 +15,7 @@
     line-height: 15px;
     cursor: pointer;
 }
+
+.show-more__button:hover {
+    opacity: .6;
+}

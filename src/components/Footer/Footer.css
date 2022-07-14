@@ -47,6 +47,10 @@
     line-height: 16px;
 }
 
+.footer__link:hover {
+    opacity: .6;
+}
+
 .footer__column-list_item:last-child {
     margin-right: 0;
 }

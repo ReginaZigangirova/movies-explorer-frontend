@@ -24,6 +24,10 @@
     margin: 0;
 }
 
+.header__logo:hover {
+    opacity: .6;
+}
+
 .header__container {
     display: flex;
     align-items: center;
@@ -49,6 +53,14 @@
     padding: 8px 20px 8px;
     cursor: pointer;
     border: none;
+}
+
+.header__signin:hover {
+    opacity: .6;
+}
+
+.header__signup:hover {
+    opacity: .6;
 }
 
 @media screen and (max-width: 880px) {
