@@ -6,9 +6,9 @@ function Form ({texts, children}) {
     <form className='form'>
     {children}
              <p className='form__label'>E-mail</p>
-             <input type='email' className='form__input'></input>
+             <input type='email' className='form__input' required></input>
              <p className='form__label'>Пароль</p>
-             <input type='current-password' className='form__input'></input>
+             <input type='current-password' className='form__input' required></input>
              <button type='submit' className='form__button form__button_register'>{texts.buttonText}</button>
          </form>
          <p className='form__text'>{texts.subText}

@@ -7,11 +7,11 @@ function Profile() {
             <form className='profile-form'>
                 <label className='profile-form__label'>
                 Имя
-                <input className='profile-form__input'></input>
+                <input className='profile-form__input' required></input>
                 </label>
                 <label className='profile-form__label'>
                 E-mail
-                <input className='profile-form__input'></input>
+                <input className='profile-form__input' required></input>
                 </label>
                 <button className='profile-form__button'>Редактировать</button>
             </form>
