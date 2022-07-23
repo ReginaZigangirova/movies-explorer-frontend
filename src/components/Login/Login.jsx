@@ -1,8 +1,25 @@
-import './Login.css'
-import Form from '../Form/Form'
-import AuthHeader from '../AuthHeader/AuthHeader'
+import './Login.css';
+import Form from '../Form/Form';
+import AuthHeader from '../AuthHeader/AuthHeader';
+import React from 'react';
 
-function Login () {
+function Login ({onLogin}) {
+
+    const [email, setEmail] = React.useState('');
+  const [password, setPassword] = React.useState('');
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  }
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onLogin( email, password);
+  }
     const texts = {
         buttonText: 'Войти',
         subText: 'Ещё не зарегистрированы?',
@@ -17,7 +34,7 @@ function Login () {
             <AuthHeader 
             textHeader={textHeader}/>
             <Form 
-            texts={texts}/>
+            texts={texts} handleEmailChange={handleEmailChange} handlePasswordChange={handlePasswordChange} handleSubmit={handleSubmit}/>
         </main>
     )
 }

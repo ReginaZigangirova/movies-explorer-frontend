@@ -12,10 +12,10 @@ function MoviesCard ({movies}) {
 
     return (
         <li className='movies-card'>
-            <img src={movies.image} alt={movies.title} className='movies-card__image' />
+            <img src={`https://api.nomoreparties.co` + movies.image.url} alt={movies.nameRU} className='movies-card__image' />
             <div className='movies-card__text'>
                 <div className='movies-card__container'>
-                <h2 className='movies-card__title'>{movies.title}</h2>
+                <h2 className='movies-card__title'>{movies.nameRU}</h2>
                 {pathname === '/saved-movies' ? (
             <button type="button" className='movies-card__delete' />
           ) : (

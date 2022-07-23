@@ -17,6 +17,11 @@
     margin: 0;
 }
 
+.movies-card__image {
+    width: 364px;
+    height: 203px;
+}
+
 .movies-card__duration {
     font-style: normal;
     font-weight: 400;
