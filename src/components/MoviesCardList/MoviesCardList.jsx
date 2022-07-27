@@ -5,10 +5,12 @@ import React from 'react';
 function MoviesCardsList (props) {
     return (
         <ul className='movies-card-list'>
-            {props.movies.map((movies) => (
-          <MoviesCard key={movies.id} movies={movies} />
+            {props.movies.map((movie) => (
+          <MoviesCard key={movie.id || movie.movieId} movie={movie} handleMovieSave={props.handleMovieSave}
+          handleMovieDelete={props.handleMovieDelete} savedMoviesUser={props.savedMoviesUser} cardsList={props.cardsList} />
         ))}
         </ul>
+        
     )
 }
 

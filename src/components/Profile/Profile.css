@@ -39,6 +39,10 @@
     text-align: end;
 }
 
+.profile-form__input:invalid {
+    color: #ff3055;
+}
+
 .profile-form__button {
     font-style: normal;
     font-weight: 400;
@@ -48,9 +52,14 @@
     border: none;
     background-color: transparent;
     padding: 0;
-    margin-top: 220px;
+    margin-top: 200px;
     text-align: center;
     cursor: pointer;
+}
+
+.profile-form__button:disabled {
+    color: #000;
+    cursor: default;
 }
 
 .profile-form__button:hover {
@@ -68,6 +77,18 @@
     outline: none;
     border: none;
     background: transparent;
+}
+
+.profile-form__group {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-form__span {
+    margin-top: 30px;
 }
 
 .profile-form__logout:hover {

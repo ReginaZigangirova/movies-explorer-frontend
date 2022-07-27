@@ -15,15 +15,18 @@ function Header({loggedIn}) {
     ) {
         headerVisible = true;
         navigationVisible = true;
-    } else if (
-            location.pathname === '/' && !loggedIn
-        ){
-            headerVisible = false;
+    } else if (location.pathname === '/' && !loggedIn) {
+        headerVisible = false;
         navigationVisible = false;
-        }
+      } else if (location.pathname === '/' && loggedIn) {
+        headerVisible = true;
+        navigationVisible = true;
+      } else {
+        headerVisible = false;
+      }
     
     return (
-            <header className={`header ${headerVisible && 'header_hidden'}`}>
+            <header className= {`header ${headerVisible && 'header_visible header_hidden'}`}>
             <Link to='/'>
                 <img src={logo} className='header__logo' alt='логотип'/>
             </Link>

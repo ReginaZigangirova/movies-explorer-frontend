@@ -72,11 +72,6 @@
     transition: opacity .2s linear;
 }
 
-.navigation__link:hover {
-    opacity: .6;
-    cursor: pointer;
-}
-
 .navigation__link_type_profile {
     font-style: normal;
     font-weight: 500;
@@ -115,6 +110,13 @@
     border-radius: 50px;
     background: #F9F9F9;
     padding: 8px;
+}
+
+.navigation__link_active {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
 }
 
 @media screen and (max-width: 768px) {
