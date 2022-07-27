@@ -11,7 +11,6 @@ import Footer from '../Footer/Footer'
 import PageNotFound from '../PageNotFound/PageNotFound';
 import api from "../../utils/MainApi"
 import { CurrentUserContext } from '../../contexts/CurrentUserContext';
-import moviesApi from '../../utils/MoviesApi';
 import ProtectedRoute from '../../ProtectedRoute/ProtectedRoute';
 
 import './App.css';
@@ -28,8 +27,6 @@ function App() {
   const [isLoginStatus, setLoginStatus] = React.useState({});
 
   const [isProfileStatus, setProfileStatus] = React.useState({});
-
-  //const [isInfoTooltipOpen, setIsInfoTooltipOpen] = React.useState(false);
   const [message, setMessage] = React.useState('');
 
   const history = useHistory();
@@ -120,7 +117,6 @@ function App() {
         ]);
       })
       .catch(() => {
-        //setIsInfoTooltipOpen(true);
         setMessage('При сохранении фильма произошла ошибка');
       })
   }
@@ -132,7 +128,6 @@ function App() {
         setSavedMoviesUser((movies) => movies.filter((m) => m._id !== movie._id));
       })
       .catch(() => {
-        //setIsInfoTooltipOpen(true);
         setMessage('При удалении фильма произошла ошибка');
       })
   }
@@ -161,7 +156,6 @@ function App() {
         }
       })
       .catch(() => {
-        //setIsInfoTooltipOpen(true);
         setMessage('Пользовательский формат токена неверен');
       });
     }
@@ -175,7 +169,6 @@ function App() {
           setCurrentUser(user);
         })
         .catch(() => {
-          //setIsInfoTooltipOpen(true);
           setMessage('Ошибка авторизации');
         });
     }
@@ -189,7 +182,6 @@ function App() {
           setSavedMoviesUser(data.filter((i) => i.owner === currentUser._id));
         })
         .catch(() => {
-          //setIsInfoTooltipOpen(true);
           setMessage('Ошибка при загрузке сохраненных фильмов');
         })
     }
