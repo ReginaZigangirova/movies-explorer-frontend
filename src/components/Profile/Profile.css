@@ -58,7 +58,7 @@
 }
 
 .profile-form__button:disabled {
-    color: #000;
+    color: #A0A0A0;
     cursor: default;
 }
 

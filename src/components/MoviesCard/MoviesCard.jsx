@@ -3,7 +3,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom'
 import  MOVIES  from '../../utils/constants';
 import { useLocation } from 'react-router-dom';
-import {duration} from '../../utils/constants'
+import duration from '../../utils/duration'
 
 function MoviesCard ({movie, cardsList, handleMovieSave, handleMovieDelete}) {
   

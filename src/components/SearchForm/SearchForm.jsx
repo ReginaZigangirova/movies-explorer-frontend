@@ -60,7 +60,7 @@ function SearchForm ({onSearchMovies}) {
             onChange={handleQueryChange}required/>
         <button className='search-form__button'>Найти</button>
         </div>
-        <FilterCheckbox handleCheckboxChange={handleCheckboxChange} checkboxStatus={checkboxStatus} />
+        <FilterCheckbox handleCheckboxChange={handleCheckboxChange} />
     </form>
     )
 }

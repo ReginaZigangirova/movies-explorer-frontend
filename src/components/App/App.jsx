@@ -51,8 +51,6 @@ function App() {
             message: 'При регистрации пользователя произошла ошибка'
           });
         }
-      })
-      .finally(() => {
         setRegisterSending(true);
       })
   }
@@ -79,8 +77,6 @@ function App() {
             message: 'При авторизации произошла ошибка'
           });
         }
-      })
-      .finally(() => {
         setLoginSending(true);
       })
   }
