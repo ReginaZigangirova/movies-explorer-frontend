@@ -1,14 +1,12 @@
 import './FilterCheckbox.css';
 
-function FilterCheckbox () {
+function FilterCheckbox ({handleCheckboxChange, checkboxStatus, setCheckboxStatus}) {
     return (
-        <div className='filter-checkbox'>
-            <label className="filter-checkbox__switch">
-               <input type="checkbox" />
-               <span className="filter-checkbox__slider filter-checkbox__round"></span>
-            </label>
-            <p className='filter-checkbox__text'>Короткометражки</p>
-        </div>
+           <label className='filter-checkbox'>
+            <input onChange={handleCheckboxChange} className="filter-checkbox__invisible-checkbox" type="checkbox" />
+            <span className={!checkboxStatus ? "filter-checkbox__pseudo-checkbox" : "filter-checkbox__pseudo-checkboxon"}></span>
+            <span className="filter-checkbox-label-text">Короткометражки</span>
+          </label>
     )
 }
 

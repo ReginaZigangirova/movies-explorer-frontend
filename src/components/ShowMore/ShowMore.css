@@ -19,3 +19,7 @@
 .show-more__button:hover {
     opacity: .6;
 }
+
+.show-more__button_inactive {
+    display: none;
+}
